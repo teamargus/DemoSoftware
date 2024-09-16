@@ -13,7 +13,7 @@ namespace demoSoftware
     /// <summary>
     /// 
     /// </summary>
-    class Card
+   class Card
     {
         private int value;
         private String face;
@@ -36,37 +36,37 @@ namespace demoSoftware
         /// 
         /// </summary>
         /// <returns></returns>
-        public int getValue() { return this.value; }
+        public int getValue() { return value; }
 
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
-        public String getFace() { return this.face; }
+        public String getFace() { return face; }
 
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
-        public String getSuit() { return this.suit; }
+        public String getSuit() { return suit; }
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="val"></param>
-        public void setValue(int val) { this.value = val; }
+        public void setValue(int val) { value = val; }
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="val"></param>
-        public void setFace(String val) { this.face = val; }
+        public void setFace(String val) { face = val; }
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="val"></param>
-        public void setSuit(String val) { this.suit = val; }
+        public void setSuit(String val) { suit = val; }
 
         /// <summary>
         /// 
@@ -74,7 +74,8 @@ namespace demoSoftware
         /// <returns></returns>
         public String toString()
         {
-            return this.face + ":" + this.suit + " = " + this.value;
+            return String.Format("{0,2}:{1,2}", face,suit);
+            //return face + ":" + suit + " = " + value;
         }
         public Image getImage()
         {
